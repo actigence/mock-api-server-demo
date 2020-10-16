@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "1cf737df-6160-42e8-9a50-95d8ebe3f25b",
+		"name": "Mock API Server Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/persons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/persons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/persons/10000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"persons",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/persons/search?name=victor",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"persons",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "victor"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
