@@ -1,5 +1,9 @@
 # Examples for Mock API Server
 
+```$xslt
+Mock API Server now supports XML response type. Simply add .xml files in the folder path to gett XML response. However, .json files will be given priority. If a folder path has both JSON and XML response files, JSON response will be used.
+```
+
 This repository contains examples on how to use [Mock API Server](http://mock-api-server.actigence.com) to generate dummy RESTful apis.
 
 [Mock API Server](http://mock-api-server.actigence.com) is a simple way to create mock RESTful APIs. It allows you to define a JSON response for an API URL. It supports all the HTTP methods and you can also define different responses based on query params.
