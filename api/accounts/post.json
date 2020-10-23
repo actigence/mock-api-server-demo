@@ -1,4 +1,5 @@
 {
+  "name": "Example for parameterized POST response",
   "queryParams": [
     {% for param in queryParams %}
     {

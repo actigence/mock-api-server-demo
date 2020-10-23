@@ -1,0 +1,10 @@
+{
+  "name": "Example for parameterized PUT response",
+  "firstName": "{{ requestBody.firstName }}",
+  "lastName": "{{ requestBody.lastName }}"
+  {% for param in queryParams %}
+  {% if param.name == 'country' %},
+  "country": "{{ param.value }}"
+  {% endif %}
+  {% endfor %}
+}
