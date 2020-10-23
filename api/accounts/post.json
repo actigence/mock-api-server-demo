@@ -1,0 +1,12 @@
+{
+  "queryParams": [
+    {% for param in queryParams %}
+    {
+      "name": "{{ param.name }}",
+      "value": "{{ param.value }}"
+    },
+    {% endfor %}
+  ],
+  "firstName": "{{ requestBody.firstName }}",
+  "lastName": "{{ requestBody.lastName }}"
+}
